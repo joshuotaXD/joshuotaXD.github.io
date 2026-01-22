@@ -42,10 +42,13 @@ hr {
 }
 
 /* División en dos columnas (Actividades y Tareas) */
+/* ... (mantiene el código anterior de body y h1) ... */
+
 .contenido-dual {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap; /* Para que sea vea bien en celulares */
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .columna {
@@ -54,38 +57,47 @@ hr {
 }
 
 .columna h2 {
-    border-bottom: 2px solid #24292e;
-    padding-bottom: 10px;
+    color: #24292e;
+    border-bottom: 3px solid #0366d6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
 }
 
-/* Diseño de los elementos dentro de las columnas */
+/* Estilo de fila para cada Actividad/Tarea */
 .item {
+    display: flex;
+    justify-content: space-between; /* Texto a la izquierda, botón a la derecha */
+    align-items: center;
     background: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
     border: 1px solid #e1e4e8;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
 }
 
-.item h3 {
-    margin-top: 0;
-    color: #0366d6;
+.item:hover {
+    border-color: #0366d6;
+    transform: translateX(5px); /* Efecto de desplazamiento al pasar el mouse */
 }
 
+.item span {
+    font-weight: 600;
+    color: #444;
+}
+
+/* El Botón "Ver" */
 .item a {
     text-decoration: none;
-    color: #0366d6;
+    background-color: #0366d6;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 0.85rem;
     font-weight: bold;
+    transition: background 0.3s;
 }
 
 .item a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #6a737d;
-    font-size: 0.9rem;
+    background-color: #024ea2;
 }
