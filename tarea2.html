@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2 | Mi GitHub Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Tarea 2</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Eficiencia y Escala en el Software</h2>
+            <p>
+                En esta actividad analizamos el impacto del rendimiento de los algoritmos y cómo el volumen de información condiciona el desarrollo de aplicaciones modernas.
+            </p>
+        </section>
+
+        <section class="item" style="margin-top: 20px; display: block;">
+            
+            <div class="pregunta-bloque" style="margin-bottom: 30px;">
+                <h3>1. ¿Qué pasaría si una aplicación popular tuviera algoritmos ineficientes?</h3>
+                <p>
+                    Si una aplicación con millones de usuarios (como Instagram o TikTok) utilizara algoritmos ineficientes, las consecuencias serían críticas:
+                </p>
+                <ul style="margin-top: 10px;">
+                    <li style="margin-bottom: 10px;"><strong>Degradación de la Experiencia (Lag):</strong> Los tiempos de respuesta serían lentos, provocando frustración en el usuario y el abandono de la app.</li>
+                    <li style="margin-bottom: 10px;"><strong>Consumo Excesivo de Recursos:</strong> El hardware (procesador y RAM) trabajaría al máximo, agotando la batería de los móviles rápidamente y sobrecalentando los dispositivos.</li>
+                    <li><strong>Costos de Infraestructura:</strong> La empresa necesitaría gastar mucho más dinero en servidores y energía para compensar la falta de optimización del código.</li>
+                </ul>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div class="pregunta-bloque">
+                <h3>2. ¿Cómo influye el tamaño de los datos en el diseño del software?</h3>
+                <p>
+                    El tamaño de los datos es el factor que determina qué estructura y qué algoritmo elegir. No es lo mismo manejar una lista de 10 contactos que una base de datos de millones de usuarios:
+                </p>
+                <ul style="margin-top: 10px;">
+                    <li style="margin-bottom: 10px;"><strong>Selección de Algoritmos:</strong> A mayor volumen de datos, se vuelven obligatorios los algoritmos con menor complejidad computacional (por ejemplo, preferir una búsqueda binaria sobre una lineal).</li>
+                    <li style="margin-bottom: 10px;"><strong>Gestión de Memoria:</strong> Con datos masivos, el diseño debe considerar el uso de memoria caché y almacenamiento distribuido para evitar colapsar la RAM.</li>
+                    <li><strong>Arquitectura del Sistema:</strong> Influye en si la aplicación será centralizada o si necesitará dividirse en microservicios para procesar la información en paralelo.</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
