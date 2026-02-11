@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 08 | Tipos de Listas Enlazadas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        .titulo-principal {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #24292e;
+            color: white;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .introduccion h2 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-top: 20px;
+            overflow-x: auto; /* Permite scroll si la tabla es muy ancha */
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 0;
+            border-bottom: 2px solid #0366d6;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo de la Tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        th {
+            background-color: #f6f8fa;
+            color: #24292e;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #fbfbfb;
+        }
+
+        .tipo-lista {
+            font-weight: bold;
+            color: #0366d6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 08</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Descripción de la Actividad</h2>
+            <p>Análisis comparativo de las variantes de estructuras de datos lineales enlazadas considerando su eficiencia en el uso de memoria y la capacidad de navegación entre los nodos que las componen</p>
+        </section>
+
+        <section class="item">
+            <h3>Cuadro Comparativo de Listas Enlazadas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Lista</th>
+                        <th>Acceso</th>
+                        <th>Memoria</th>
+                        <th>Flexibilidad</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tipo-lista">Simple</td>
+                        <td>Unidireccional</td>
+                        <td>Bajo consumo</td>
+                        <td>Limitada</td>
+                        <td>Cada nodo apunta únicamente al siguiente elemento y el último apunta a nulo</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-lista">Doble</td>
+                        <td>Bidireccional</td>
+                        <td>Mayor consumo</td>
+                        <td>Alta</td>
+                        <td>Permite recorrer la lista hacia adelante y hacia atrás mediante punteros al sucesor y antecesor</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-lista">Circular</td>
+                        <td>Infinito/Continuo</td>
+                        <td>Moderado</td>
+                        <td>Media</td>
+                        <td>El último nodo se conecta con el primero creando un ciclo que permite navegación ininterrumpida</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
