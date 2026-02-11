@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 07 | Listas Enlazadas</title>
+    <style>
+        /* Estilos integrados para mantener el diseño en un solo archivo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        .titulo-principal {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #24292e;
+            color: white;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .introduccion h2 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .codigo-python {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 07</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Descripción de la Actividad</h2>
+            <p>Implementación de una estructura de datos lineal mediante listas enlazadas en Python para gestionar nodos de forma dinámica permitiendo operaciones de inserción y búsqueda eficiente en memoria</p>
+        </section>
+
+        <section class="item" style="margin-top: 20px;">
+            <h3>Código de Programación</h3>
+            <pre class="codigo-python">
+<code>
+class Nodo:
+    def __init__(self, dato):
+        self.dato = dato
+        self.siguiente = None
+
+class ListaEnlazada:
+    def __init__(self):
+        self.cabeza = None
+
+    def insertar(self, dato):
+        nuevo_nodo = Nodo(dato)
+        if not self.cabeza:
+            self.cabeza = nuevo_nodo
+        else:
+            actual = self.cabeza
+            while actual.siguiente:
+                actual = actual.siguiente
+            actual.siguiente = nuevo_nodo
+        print(f"✅ '{dato}' ha sido agregado.")
+
+    def buscar(self, valor):
+        actual = self.cabeza
+        pos = 0
+        while actual:
+            if str(actual.dato) == str(valor):
+                return pos
+            actual = actual.siguiente
+            pos += 1
+        return -1
+
+    def mostrar(self):
+        if not self.cabeza:
+            print("\n   La lista está vacía. ")
+            return
+        actual = self.cabeza
+        elementos = []
+        while actual:
+            elementos.append(f"[{actual.dato}]")
+            actual = actual.siguiente
+        print("\nESTADO DE LA LISTA:")
+        print(" -> ".join(elementos) + " -> None")
+
+# MENÚ INTERACTIVO
+def menu():
+    lista = ListaEnlazada()
+    
+    while True:
+        print("\n---  MENÚ LISTA ENLAZADA ---")
+        print("1. Agregar elemento")
+        print("2. Buscar elemento")
+        print("3. Mostrar lista")
+        print("4. Salir")
+        
+        opcion = input("\nSelecciona una opción (1-4): ")
+
+        if opcion == "1":
+            dato = input("Escribe el dato a agregar: ")
+            lista.insertar(dato)
+        
+        elif opcion == "2":
+            dato = input("¿Qué valor buscas?: ")
+            posicion = lista.buscar(dato)
+            if posicion != -1:
+                print(f" ¡Encontrado! Está en la posición {posicion}.")
+            else:
+                print(" No se encontró ese valor.")
+        
+        elif opcion == "3":
+            lista.mostrar()
+        
+        elif opcion == "4":
+            print("¡Hasta luego! ")
+            break
+        
+        else:
+            print("Opción no válida, intenta de nuevo.")
+
+if __name__ == "__main__":
+    menu()
+</code>
+            </pre>
+        </section>
+    </main>
+
+</body>
+</html>
