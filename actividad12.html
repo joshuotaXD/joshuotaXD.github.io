@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 13 | Mi GitHub Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 13</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Desarrollo: Árboles Binarios</h2>
+            <p>En esta clase profundizamos en los <strong>Árboles Binarios</strong>, una estructura de datos no lineal donde cada nodo puede tener, como máximo, dos hijos. Esta restricción es lo que les da su nombre y los hace fundamentales para algoritmos de búsqueda eficiente.</p>
+        </section>
+
+        <section class="item" style="margin-top: 20px; display: block;">
+            <h3>Anatomía de un Árbol Binario</h3>
+            <p>Un árbol binario se compone de los siguientes elementos clave:</p>
+            <ul style="line-height: 1.8;">
+                <li><strong>Nodo Raíz:</strong> El nodo superior del árbol, el único que no tiene padre.</li>
+                <li><strong>Nodos Padre e Hijo:</strong> Cualquier nodo conectado a otro inferior es su padre, y el inferior es su hijo (izquierdo o derecho).</li>
+                <li><strong>Hojas:</strong> Nodos que no tienen ningún hijo (se encuentran al final de las ramas).</li>
+                <li><strong>Subárboles:</strong> Cada hijo puede ser considerado la raíz de su propio árbol más pequeño.</li>
+            </ul>
+
+            
+
+            <h3 style="margin-top: 25px;">Tipos de Árboles Binarios</h3>
+            <p>Existen variaciones dependiendo de cómo estén organizados sus nodos:</p>
+            <ul style="line-height: 1.8;">
+                <li><strong>Árbol Binario Lleno:</strong> Cada nodo tiene exactamente 0 o 2 hijos.</li>
+                <li><strong>Árbol Binario Perfecto:</strong> Todos los niveles están completamente llenos y las hojas están a la misma altura.</li>
+                <li><strong>Árbol de Búsqueda Binaria (BST):</strong> El hijo izquierdo siempre es menor que el padre y el derecho siempre es mayor.</li>
+            </ul>
+
+            <div style="background-color: #f1f8ff; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 5px solid #0366d6;">
+                <strong>¿Por qué son importantes?</strong>
+                <p>La principal ventaja de los árboles binarios, especialmente los de búsqueda, es que permiten encontrar, insertar o eliminar datos en un tiempo mucho menor que una lista simple, dividiendo el espacio de búsqueda a la mitad en cada paso.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mi Portafolio de GitHub</p>
+    </footer>
+
+</body>
+</html>

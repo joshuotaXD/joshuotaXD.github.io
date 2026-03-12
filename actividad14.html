@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 14 | Mi GitHub Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 14</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Desarrollo: Recorridos de Árboles</h2>
+            <p>En esta clase aprendimos que recorrer un árbol significa visitar cada uno de sus nodos exactamente una vez en un orden específico. Debido a que los árboles no son lineales, existen diferentes estrategias para explorarlos.</p>
+        </section>
+
+        <section class="item" style="margin-top: 20px; display: block;">
+            <h3>Recorridos en Profundidad (DFS)</h3>
+            <p>Los recorridos más comunes se basan en la posición de la <strong>Raíz (R)</strong> respecto a sus hijos <strong>Izquierdo (I)</strong> y <strong>Derecho (D)</strong>:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                    <h4 style="color: #0366d6; margin-top: 0;">1. Preorden (R-I-D)</h4>
+                    <p>Se visita primero la raíz, luego el subárbol izquierdo y al final el derecho.</p>
+                    <small>Uso: Útil para copiar la estructura del árbol.</small>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                    <h4 style="color: #0366d6; margin-top: 0;">2. Inorden (I-R-D)</h4>
+                    <p>Se visita el hijo izquierdo, luego la raíz y al final el derecho.</p>
+                    <small>Uso: En árboles de búsqueda, devuelve los valores en orden ascendente.</small>
+                </div>
+
+                <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                    <h4 style="color: #0366d6; margin-top: 0;">3. Postorden (I-D-R)</h4>
+                    <p>Se visitan los hijos primero (izquierdo, luego derecho) y al final la raíz.</p>
+                    <small>Uso: Útil para eliminar nodos o calcular el tamaño del árbol.</small>
+                </div>
+            </div>
+
+            
+
+            <h3 style="margin-top: 30px;">Recorrido en Amplitud (BFS)</h3>
+            <p>A diferencia de los anteriores, este método recorre el árbol <strong>nivel por nivel</strong>, de arriba hacia abajo y de izquierda a derecha.</p>
+
+            <div style="background-color: #f6f8fa; padding: 15px; border-radius: 8px; margin-top: 15px; border-left: 5px solid #28a745;">
+                <strong>Resumen de aprendizaje:</strong>
+                <p>La elección del recorrido depende de lo que queramos hacer con los datos. Por ejemplo, si tenemos un árbol con una expresión matemática, el recorrido Inorden nos daría la operación en el formato humano normal.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mi Portafolio de GitHub</p>
+    </footer>
+
+</body>
+</html>
