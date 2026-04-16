@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 18 | Matriz de Adyacencia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        .titulo-principal {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #24292e;
+            color: white;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .introduccion h2 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 0;
+            border-bottom: 2px solid #0366d6;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .matriz-container {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f6f8fa;
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 15px 0;
+            border: 1px solid #d1d5da;
+        }
+
+        .resaltado {
+            color: #d73a49;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 18</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Descripción de la Actividad</h2>
+            <p>Análisis de la matriz de adyacencia como una forma tabular de representación de grafos que permite identificar conexiones directas mediante el uso de valores booleanos o numéricos en una estructura bidimensional</p>
+        </section>
+
+        <section class="item">
+            <h3>Matriz de Adyacencia</h3>
+            
+            <p>La <span class="resaltado">Matriz de Adyacencia</span> es una estructura de datos bidimensional donde tanto las filas como las columnas representan los nodos del grafo permitiendo verificar de forma inmediata si existe un vínculo entre dos vértices específicos mediante la intersección de sus índices</p>
+
+            <div class="matriz-container">
+                &nbsp;&nbsp;&nbsp;A B C<br>
+                A 0 1 1<br>
+                B 1 0 0<br>
+                C 1 0 0
+            </div>
+
+            <p>Dentro de este esquema el valor <span class="resaltado">1</span> indica la existencia de una arista mientras que el <span class="resaltado">0</span> representa la ausencia de conexión siendo una herramienta muy sencilla de implementar pero con la desventaja de requerir un espacio de memoria cuadrático lo que la vuelve poco eficiente para grafos con pocos enlaces</p>
+
+            
+
+        </section>
+    </main>
+
+</body>
+</html>
