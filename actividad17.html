@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 17 | Lista de Adyacencia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        .titulo-principal {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #24292e;
+            color: white;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .introduccion h2 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 0;
+            border-bottom: 2px solid #0366d6;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .ejemplo-lista {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .resaltado {
+            color: #0366d6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 17</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Descripción de la Actividad</h2>
+            <p>Exploración de la lista de adyacencia como una técnica optimizada para la representación de grafos en memoria mediante el almacenamiento selectivo de conexiones directas entre nodos</p>
+        </section>
+
+        <section class="item">
+            <h3>Lista de Adyacencia</h3>
+            
+            <p>La <span class="resaltado">Lista de Adyacencia</span> es una estructura donde cada vértice del grafo actúa como una clave que almacena una colección de todos los nodos vecinos con los que posee una arista logrando un uso de memoria mucho más eficiente al no registrar los espacios vacíos o conexiones inexistentes</p>
+
+            <div class="ejemplo-lista">
+                A → [B, C]<br>
+                B → [D]<br>
+                C → [A]<br>
+                D → [B]
+            </div>
+
+            <p>Esta forma de organización es especialmente útil cuando trabajamos con <span class="resaltado">grafos dispersos</span> ya que permite iterar rápidamente sobre los vecinos de un nodo específico sin tener que recorrer toda una fila de una matriz mejorando el rendimiento en algoritmos de búsqueda como BFS o DFS</p>
+
+            
+
+        </section>
+    </main>
+
+</body>
+</html>
