@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad 18 | Matriz de Adyacencia</title>
+    <title>Actividad 15 | Estructura de Grafos</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,26 +51,21 @@
             margin-bottom: 15px;
         }
 
-        .matriz-container {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #f6f8fa;
-            padding: 20px;
-            border-radius: 8px;
-            display: inline-block;
-            margin: 15px 0;
-            border: 1px solid #d1d5da;
+        .concepto {
+            font-weight: bold;
+            color: #0366d6;
         }
 
-        .resaltado {
-            color: #d73a49;
-            font-weight: bold;
+        .lista-info {
+            margin-top: 15px;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 class="titulo-principal">Actividad 18</h1>
+        <h1 class="titulo-principal">Actividad 15</h1>
     </header>
 
     <main class="contenedor">
@@ -78,25 +73,24 @@
             <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
             <br><br>
             <h2>Descripción de la Actividad</h2>
-            <p>Análisis de la matriz de adyacencia como una forma tabular de representación de grafos que permite identificar conexiones directas mediante el uso de valores booleanos o numéricos en una estructura bidimensional</p>
+            <p>Introducción al estudio de los grafos como estructuras de datos no lineales diseñadas para representar y analizar relaciones complejas entre múltiples elementos dentro de una red</p>
         </section>
 
         <section class="item">
-            <h3>Matriz de Adyacencia</h3>
+            <h3>Conceptos de Grafos</h3>
+            <p>Un grafo se define como un conjunto de <span class="concepto">nodos</span> conocidos también como vértices los cuales se encuentran interconectados mediante vínculos denominados <span class="concepto">aristas</span> permitiendo modelar diversos sistemas de la vida real</p>
             
-            <p>La <span class="resaltado">Matriz de Adyacencia</span> es una estructura de datos bidimensional donde tanto las filas como las columnas representan los nodos del grafo permitiendo verificar de forma inmediata si existe un vínculo entre dos vértices específicos mediante la intersección de sus índices</p>
+            
 
-            <div class="matriz-container">
-                &nbsp;&nbsp;&nbsp;A B C<br>
-                A 0 1 1<br>
-                B 1 0 0<br>
-                C 1 0 0
+            <div class="lista-info">
+                <p>Los <span class="concepto">Grafos Dirigidos</span> son aquellos donde las conexiones poseen un sentido único o dirección específica indicando un flujo determinado entre los elementos</p>
+                
+                <p>Los <span class="concepto">Grafos No Dirigidos</span> presentan conexiones bidireccionales donde la relación entre los nodos es mutua y no existe una jerarquía de sentido en las aristas</p>
+                
+                
+
+                <p>Esta estructura es fundamental para el funcionamiento de <span class="concepto">redes sociales</span> donde se representan amistades así como en sistemas de navegación y rutas de internet para encontrar el camino más corto entre dos puntos</p>
             </div>
-
-            <p>Dentro de este esquema el valor <span class="resaltado">1</span> indica la existencia de una arista mientras que el <span class="resaltado">0</span> representa la ausencia de conexión siendo una herramienta muy sencilla de implementar pero con la desventaja de requerir un espacio de memoria cuadrático lo que la vuelve poco eficiente para grafos con pocos enlaces</p>
-
-            
-
         </section>
     </main>
 
