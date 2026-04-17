@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 19 | Algoritmos de Grafos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        .titulo-principal {
+            font-size: 3.5rem;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #24292e;
+            color: white;
+            margin: 0;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .introduccion h2 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #24292e;
+            margin-top: 0;
+            border-bottom: 2px solid #0366d6;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .algoritmo-box {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #d1d5da;
+        }
+
+        .nombre-algoritmo {
+            font-weight: bold;
+            color: #d73a49;
+            font-size: 1.1rem;
+        }
+
+        .descripcion-algoritmo {
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">Actividad 19</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="introduccion">
+            <a href="index.html" style="color: #0366d6; text-decoration: none;">← Volver al inicio</a>
+            <br><br>
+            <h2>Descripción de la Actividad</h2>
+            <p>Estudio y análisis de los algoritmos fundamentales aplicados a estructuras de grafos para la resolución de problemas complejos relacionados con la exploración de redes y la optimización de rutas</p>
+        </section>
+
+        <section class="item">
+            <h3>Principales Algoritmos de Grafos</h3>
+            
+            <div class="algoritmo-box">
+                <span class="nombre-algoritmo">DFS (Depth First Search)</span>
+                <p class="descripcion-algoritmo">Este algoritmo realiza una búsqueda en profundidad explorando un camino lo más lejos posible antes de retroceder siendo ideal para detectar ciclos en un grafo o resolver laberintos mediante la recursividad</p>
+            </div>
+
+            <div class="algoritmo-box">
+                <span class="nombre-algoritmo">BFS (Breadth First Search)</span>
+                <p class="descripcion-algoritmo">A diferencia del anterior este método recorre el grafo por niveles visitando primero a todos los vecinos directos del nodo actual antes de pasar al siguiente nivel de profundidad lo que garantiza encontrar el camino más corto en grafos sin pesos</p>
+            </div>
+
+            <div class="algoritmo-box">
+                <span class="nombre-algoritmo">Dijkstra</span>
+                <p class="descripcion-algoritmo">Es un algoritmo de optimización diseñado para encontrar la ruta más corta entre un nodo origen y todos los demás destinos dentro de un grafo con pesos en sus aristas aplicándose ampliamente en sistemas de GPS y navegación satelital</p>
+            </div>
+
+            <p>La implementación correcta de estos algoritmos permite maximizar la eficiencia en la búsqueda de información y la gestión de recursos en redes sociales sistemas logísticos y plataformas de telecomunicaciones</p>
+
+        </section>
+    </main>
+
+</body>
+</html>
